@@ -1,0 +1,147 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header and navigation */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo h1 {
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Main hero section */
+.hero-section {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #ddd;
+}
+
+.hero-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Container in the bottom-left corner */
+.corner-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    border-radius: 0 10px 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 250px;
+}
+
+.corner-container h3 {
+    margin-bottom: 10px;
+}
+
+.corner-container p {
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .corner-container {
+        width: 200px;
+        font-size: 14px;
+    }
+
+    .hero-section h2 {
+        font-size: 28px;
+    }
+
+    .hero-section p {
+        font-size: 16px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .corner-container {
+        width: 150px;
+        font-size: 12px;
+    }
+
+    .hero-section h2 {
+        font-size: 22px;
+    }
+
+    .hero-section p {
+        font-size: 14px;
+    }
+
+    .nav-links {
+        font-size: 14px;
+    }
+}
